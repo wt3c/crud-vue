@@ -1,10 +1,11 @@
-import Product from './components/product'
-import AddProduct from './components/add-product'
-import ProductDelete from './components/product-delete'
-import ProductEdit from './components/product-edit'
-import ProductList from './components/product-list'
+import Product from './components/product';
+import AddProduct from './components/add-product';
+import ProductDelete from './components/product-delete';
+import ProductEdit from './components/product-edit';
+import ProductList from './components/product-list';
 
-    export default {
+
+export default {
         name: "App",
         components: {
             Product,
@@ -14,13 +15,11 @@ import ProductList from './components/product-list'
             ProductList
         },
 
-
 var products = [
     {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
     {id: 2, name: 'Ember', description: 'A framework for creating ambitious web applications.', price: 100},
     {id: 3, name: 'React', description: 'A JavaScript Library for building user interfaces.', price: 100}
 ];
-
 
 // Porra mais simples impossivel
 // Gostei muito dessa solução !
