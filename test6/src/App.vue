@@ -1,18 +1,19 @@
+<script src="../../crud/src/main.js"></script>
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <HelloWorld/>
   </div>
 </template>
 
 <script>
-// import testc from './components/teste-comp'
+import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
-  // components:{
-  //   testc,
-  // }
+  components: {
+    HelloWorld
+  }
 }
 </script>
 
