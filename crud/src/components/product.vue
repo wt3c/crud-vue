@@ -1,5 +1,8 @@
+<script src="../../../src/vue.js"></script>
 <template>
   <div>
+
+
     <h2>{{ product.name }}</h2>
     <b>Description: </b>
     <div>{{ product.description }}</div>

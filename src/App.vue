@@ -1,3 +1,4 @@
+<script src="vue.js"></script>
 <template>
     <div>
         <h1>Vue JS CRUD (Based on Vue JS version 2)</h1>
