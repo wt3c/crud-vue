@@ -6,23 +6,33 @@
 </template>
 
 <script>
-// import testc from './components/teste-comp'
+  // import testc from './components/teste-comp'
 
-export default {
-  name: 'App',
-  // components:{
-  //   testc,
-  // }
-}
+  var product_list = [
+    {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
+    {id: 2, name: 'Ember', description: 'A framework for creating ambitious web applications.', price: 100},
+    {id: 3, name: 'React', description: 'A JavaScript Library for building user interfaces.', price: 100}
+  ];
+
+  export default {
+    name: 'App',
+    // components:{
+    //   testc,
+    // }
+    data() {
+      return{products:product_list}
+    }
+  }
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
