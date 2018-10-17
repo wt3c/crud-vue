@@ -69,7 +69,7 @@
 
   export default {
     name: "product-list",
-    props:['products'],
+    props: {products : ['id', 'name', 'description', 'price']},
 
     data() {
       return {searchKey: ''};

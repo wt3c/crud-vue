@@ -19,6 +19,9 @@
     // components:{
     //   testc,
     // }
+
+    props: ['products'],
+
     data() {
       return{products:product_list}
     }
