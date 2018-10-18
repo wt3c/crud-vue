@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <router-view :products=products_data> </router-view>
+    <!--<product-list :products=products_data></product-list>-->
   </div>
 </template>
 
 <script>
-  // import testc from './components/teste-comp'
+  // import productList from '@/components/product-list'
 
   var product_list = [
     {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
@@ -16,15 +17,15 @@
 
   export default {
     name: 'App',
-    // components:{
-    //   testc,
-    // }
-
-    props: ['products'],
+    // components: {
+    //   productList,
+    // },
 
     data() {
-      return{products:product_list}
-    }
+      return {
+        products_data: product_list
+      }
+    },
   }
 
 </script>

@@ -48,7 +48,7 @@
         </td>
         <td>
           <a class="btn btn-warning btn-xs">
-            <router-link :to="{name: 'product-edit', params: {product_id: product.id}}">Edit</router-link>
+            <router-link :to="{name: 'product-edit', params: {product_id: product.id}}">Editar</router-link>
           </a>
           <a class="btn btn-danger btn-xs">
             <router-link :to="{name: 'product-delete', params: {product_id: product.id}}">Delete
@@ -66,13 +66,17 @@
 </template>
 
 <script>
-
   export default {
     name: "product-list",
-    props: {products : ['id', 'name', 'description', 'price']},
+    props: ['products'],
 
     data() {
-      return {searchKey: ''};
+
+      return(searchKey= '')
+    },
+    created(){
+      console.log('@@@@@@@@@@@@@@@@@', this.products)
+      // products = this.products
     },
     computed: {
       filteredProducts() {
@@ -80,8 +84,30 @@
           return product.name.indexOf(this.searchKey) > -1
         })
       }
-    }
+    },
+
+    // findProduct(productId) {
+    // //
+    // //   var product_list = [
+    // //     {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
+    // //     {id: 2, name: 'Ember', description: 'A framework for creating ambitious web applications.', price: 100},
+    // //     {id: 3, name: 'React', description: 'A JavaScript Library for building user interfaces.', price: 100}
+    // //   ];
+    // //   console.log("CHEGOU", product_list[productId])
+    // // return (product_list[productId])
+    //   return (this.products[findProductKey(productId)])
+    // },
+    // findProductKey(productId) {
+    //
+    //   for (var key = 0; key < this.products.length; key++) {
+    //     if (this.products[key].id === productId) {
+    //       return key;
+    //     }
+    //   }
+    // },
+
   }
+
 
 </script>
 
