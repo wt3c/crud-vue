@@ -16,31 +16,15 @@
 
 
 <script>
-  import productList from '@/components/product-list'
-  import crud from '@/services/crud'
+  import app from '@/App'
 
   export default {
     name: "product",
-    props: ['products'],
-    data() {
+    data: function () {
       return {
-        product: [],
+        product: app.findProduct(this.$route.params.product_id)
       }
     },
-    created() {
-      // console.log("##############", this.products, this.$route.params.product_id - 1)
-       var bb = crud.getProduct(2)
-       console.log(bb)
-
-      var cc = productList.findProduct(this.$route.params.product_id - 1)
-
-      console.log(cc, "%%%%%%%%%")
-
-
-       this.product= cc
-    }
-
-
   }
 
 

@@ -59,7 +59,7 @@
       </tbody>
     </table>
 
-    <pre>{{products}}</pre>
+    <!--<pre>{{products}}</pre>-->
 
   </div>
 
@@ -71,40 +71,15 @@
     props: ['products'],
 
     data() {
-
-      return(searchKey= '')
-    },
-    created(){
-      console.log('@@@@@@@@@@@@@@@@@', this.products)
-      // products = this.products
+      return {searchKey: ''}
     },
     computed: {
       filteredProducts() {
         return this.products.filter((product) => {
           return product.name.indexOf(this.searchKey) > -1
         })
-      }
+      },
     },
-
-    // findProduct(productId) {
-    // //
-    // //   var product_list = [
-    // //     {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
-    // //     {id: 2, name: 'Ember', description: 'A framework for creating ambitious web applications.', price: 100},
-    // //     {id: 3, name: 'React', description: 'A JavaScript Library for building user interfaces.', price: 100}
-    // //   ];
-    // //   console.log("CHEGOU", product_list[productId])
-    // // return (product_list[productId])
-    //   return (this.products[findProductKey(productId)])
-    // },
-    // findProductKey(productId) {
-    //
-    //   for (var key = 0; key < this.products.length; key++) {
-    //     if (this.products[key].id === productId) {
-    //       return key;
-    //     }
-    //   }
-    // },
 
   }
 
