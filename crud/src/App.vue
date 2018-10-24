@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  // import productList from '@/components/product-list'
+  import CCrouter from './router/index'
 
   var product_list = [
     {id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100},
@@ -17,9 +17,6 @@
 
   export default {
     name: 'App',
-    // components: {
-    //   productList,
-    // },
 
     data() {
       return {
@@ -38,6 +35,7 @@
     },
     deleteProduct(prod) {
       product_list.splice(prod, 1);
+      CCrouter.push('/');
     },
     updateProduct(product) {
       product_list[this.findProduct(product.id)] = {
@@ -46,7 +44,8 @@
         description: product.description,
         price: product.price
       };
-      // router.push('/')
+      CCrouter.push('/');
+
     },
     createProduct(product) {
       product_list.push({
@@ -54,22 +53,12 @@
         name: product.name,
         description: product.description,
         price: product.price
-      })
-    }
+      });
 
+      CCrouter.push('/');
+    },
 
   }
-
-  // var router = new VueRouter({
-  //   routes: [
-  //     {path: '/'},
-  //     {path: '/product/:product_id', component: Product, name: 'product'},
-  //     {path: '/add-product', component: AddProduct},
-  //     {path: '/product/:product_id/edit', component: ProductEdit, name: 'product-edit'},
-  //     {path: '/product/:product_id/delete', component: ProductDelete, name: 'product-delete'}
-  //   ]
-  // });
-
 
 </script>
 

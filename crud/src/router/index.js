@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import testecomp from '@/components/teste-comp'
+
 import product from '@/components/product'
 import productc_list from '@/components/product-list'
 import add_product from '@/components/add-product'
@@ -36,7 +36,5 @@ export default new Router({
       name: 'product-delete',
       component: product_delete
     },
-
-
   ]
 })
