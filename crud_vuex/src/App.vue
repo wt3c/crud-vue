@@ -1,54 +1,34 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <product_list></product_list>
+    <router-view></router-view>
 
-    <h4>{{user}}</h4>
-
-    <cc-users> </cc-users>
-
-    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
-import CcUsers from "./components/users/main";
-import { setTimeout } from "timers";
+  import product_list from './components/product-list'
+  import product from './components/product'
 
-export default {
-  name: "App",
-
-   mounted() {
-    const payload = {
-      name: "Welington",
-      email: "wcarlos3@gmail.com",
-      level: "deus"
-    };
-    setTimeout(() => {
-      this.$store.commit("CHANGE_USER", payload);
-    }, 2000);
-  },
-
-  components: {
-    CcUsers
-  },
-
-  computed: {
-    user() {
-      const { name, email } = this.$store.state.user;
-
-      return `O usuario logado é ${name} e possui o email ${email} `;
+  export default {
+    name: 'App',
+    components:{
+      product_list,
+      product
     }
+
+
   }
-};
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
 </style>
