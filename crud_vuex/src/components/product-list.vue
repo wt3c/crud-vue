@@ -75,9 +75,9 @@
     },
 
     computed: {
-      products() {
-        return this.$store.state.product_list;
-      },
+      // products() {
+      //   return this.$store.state.product_list;
+      // },
       filteredProducts() {
         return this.$store.state.product_list.filter((product) => {
           return product.name.indexOf(this.searchKey) > -1

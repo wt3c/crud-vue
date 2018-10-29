@@ -2,58 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc6ca51-a3d6-4dca-b565-e67d6217d2eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex/src/components/add-product.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex/src/components/product-delete.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex/src/components/product.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/store/state.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/store/store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/static/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/.babelrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/.postcssrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/.postcssrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/check-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/check-versions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/vue-loader.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/vue-loader.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/webpack.dev.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/webpack.dev.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/build/webpack.prod.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/build/webpack.prod.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/config/dev.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/config/prod.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/config/test.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/config/test.env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/components/HelloWorld.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/components/button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/users/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/components/users/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/modules/Categories/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/modules/Categories/mutations.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/modules/Categories/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_vuex/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/product-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/components/product-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_vuex/src/components/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/components/product.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/store/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/store/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud_vuex/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/static/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex/src/components/product-list.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/e2e/custom-assertions/elementCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/e2e/nightwatch.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/e2e/nightwatch.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/e2e/runner.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/e2e/runner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/e2e/specs/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/e2e/specs/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/unit/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/unit/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/unit/jest.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/unit/jest.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/unit/setup.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/unit/setup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_vuex/test/unit/specs/HelloWorld.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_vuex_vedovelli/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,9 +21,9 @@
     <session id="-1803182088">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="3" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="1" />
@@ -79,7 +35,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,11 +47,11 @@
           <entry key="editorconfig" value="2" />
           <entry key="eslintrc" value="2" />
           <entry key="html" value="16" />
-          <entry key="js" value="67" />
+          <entry key="js" value="71" />
           <entry key="json" value="3" />
           <entry key="png" value="1" />
           <entry key="ts" value="2" />
-          <entry key="vue" value="68" />
+          <entry key="vue" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -103,24 +59,24 @@
           <entry key="HTML" value="16" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="6" />
-          <entry key="JavaScript" value="67" />
+          <entry key="JavaScript" value="71" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="TypeScript" value="2" />
-          <entry key="Vue.js" value="68" />
+          <entry key="Vue.js" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="218" />
-          <entry key="js" value="1574" />
-          <entry key="vue" value="6564" />
+          <entry key="js" value="2002" />
+          <entry key="vue" value="7614" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="218" />
-          <entry key="JavaScript" value="1574" />
-          <entry key="Vue.js" value="6564" />
+          <entry key="JavaScript" value="2002" />
+          <entry key="Vue.js" value="7614" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -131,89 +87,125 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#140#161#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="e#162#214#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/store.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-list.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/mutations.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/state.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.69264615">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#140#161#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/App.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="108">
+                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                  <folding>
+                    <element signature="e#200#242#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/store.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+                  <folding>
+                    <element signature="e#0#21#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/state.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/mutations.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-list.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="474">
+                  <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="828">
+                  <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/crud/src/components/product-delete.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud/src/components/product-edit.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="326">
+                  <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/crud/src/App.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -262,17 +254,18 @@
         <option value="$PROJECT_DIR$/crud/src/router/index.js" />
         <option value="$PROJECT_DIR$/crud/src/main.js" />
         <option value="$PROJECT_DIR$/crud/test/e2e/runner.js" />
-        <option value="$PROJECT_DIR$/crud_vuex/src/store/store.js" />
         <option value="$PROJECT_DIR$/crud_vuex/src/components/add-product.vue" />
         <option value="$PROJECT_DIR$/crud_vuex/src/main.js" />
         <option value="$PROJECT_DIR$/crud_vuex/index.html" />
-        <option value="$PROJECT_DIR$/crud_vuex/src/components/product-list.vue" />
         <option value="$PROJECT_DIR$/crud_vuex/src/components/product-delete.vue" />
-        <option value="$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue" />
-        <option value="$PROJECT_DIR$/crud_vuex/src/store/state.js" />
         <option value="$PROJECT_DIR$/crud_vuex/src/router/index.js" />
-        <option value="$PROJECT_DIR$/crud_vuex/src/App.vue" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/components/product-list.vue" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/store/state.js" />
         <option value="$PROJECT_DIR$/crud_vuex/src/components/product.vue" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/store/store.js" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/App.vue" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/store/mutations.js" />
+        <option value="$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue" />
       </list>
     </option>
   </component>
@@ -327,6 +320,24 @@
             <path>
               <item name="crud-vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="crud-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crud-vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crud-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crud-vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crud-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="crud" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crud-vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crud-vue" type="462c0819:PsiDirectoryNode" />
               <item name="crud_vuex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,6 +366,11 @@
               <item name="crud_vuex" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crud-vue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crud-vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -413,7 +429,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16096257" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.14919786" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32951945" />
@@ -471,21 +487,10 @@
     <entry file="file://$PROJECT_DIR$/crud/.editorconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue.js" />
     <entry file="file://$PROJECT_DIR$/crud/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-890" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/components/HelloWorld.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crud/src/services/crud.js">
@@ -507,20 +512,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api-marvel/marvel/index.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/services/MarvelAPI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/src/components/product-list.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api-marvel/marvel/node_modules/.bin/acorn">
       <provider selected="true" editor-type-id="text-editor" />
@@ -545,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/src/components/product-delete.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud/node_modules/vue-router/dist/vue-router.esm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -559,13 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vue-router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="109" column="14" lean-forward="true" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vue-router.js" />
     <entry file="file://$PROJECT_DIR$/crud/node_modules/vue-router/types/router.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -580,34 +558,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/src/components/product-edit.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="3" lean-forward="true" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js" />
+    <entry file="file://$PROJECT_DIR$/src/App.vue" />
+    <entry file="file://$PROJECT_DIR$/src/index.html" />
     <entry file="file://$PROJECT_DIR$/crud/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -625,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/src/components/product.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud/test/e2e/runner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -642,16 +588,6 @@
     <entry file="file://$PROJECT_DIR$/crud/test/unit/.eslintrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/components/Quadrinho.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -659,31 +595,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/mutations.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="4" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,17 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#140#161#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -719,27 +623,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue">
+    <entry file="file://$PROJECT_DIR$/crud/src/components/product.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="198">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/state.js">
+    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/components/Quadrinho.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/services/MarvelAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#162#214#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -753,27 +654,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-marvel/marvel/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/src/components/product-list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="69" column="6" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product.vue">
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-list.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="474">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-list.vue">
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#200#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/src/components/product-edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_vuex/src/components/product-edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="26" lean-forward="true" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/src/components/product-delete.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
         </state>
       </provider>
     </entry>

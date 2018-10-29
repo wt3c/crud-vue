@@ -7,12 +7,12 @@ export default {
   ],
 
   findProduct(productId) {
-    return product[this.findProductKey(productId)];
+    return this.product_list[this.findProductKey(productId)];
   },
 
   findProductKey(productId) {
-    for (var key = 0; key < product_list.length; key++) {
-      if (product_list[key].id === productId) {
+    for (var key = 0; key < this.product_list.length; key++) {
+      if (this.product_list[key].id === productId) {
         return key;
       }
     }

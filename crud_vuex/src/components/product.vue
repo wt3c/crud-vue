@@ -15,16 +15,13 @@
 </template>
 
 <script>
+
   export default {
     name: "product",
 
-    data () {
-      return {
-        {product: this.$store.state.findProduct(this.$route.params.product_id)}
-      }
-    }
-
-
+    data() {
+      return {product: this.$store.state.findProduct(this.$route.params.product_id)}
+    },
   }
 </script>
 
