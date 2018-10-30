@@ -2,7 +2,7 @@
 
   <div>
     <h2>Edit product</h2>
-    <!--<form>-->
+    <form v-on:submit="updateProduct(productt)">
 
     <div class="form-group">
       <label for="edit-name">Name</label>
@@ -19,12 +19,12 @@
       <input type="number" class="form-control" id="edit-price" v-model="productt.price"/>
     </div>
 
-    <button class="btn btn-primary" v-on:click="updateProduct(productt)">Save</button>
+    <button class="btn btn-primary">Save</button>
 
     <a class="btn btn-default">
       <router-link to="/">Cancel</router-link>
     </a>
-    <!--</form>-->
+    </form>
   </div>
 
 </template>
