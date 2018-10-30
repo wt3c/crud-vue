@@ -44,10 +44,7 @@
         let prod = product;
 
         this.$store.commit('ADD_PRODUCT', prod);
-
         this.$router.push('/')
-
-
       }
     }
 
