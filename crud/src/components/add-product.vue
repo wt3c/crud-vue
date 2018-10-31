@@ -2,8 +2,7 @@
   <div>
     <h2>Add new product</h2>
 
-    <!--  -->
-    <!--<form v-on:submit="createProduct">-->
+    <!-- <form v-on:submit="createProduct"> -->
 
     <div class="form-group">
       <label for="add-name">Name</label>
@@ -33,18 +32,18 @@
   import app from '@/App'
 
   export default {
-    name: "add-product",
+    name: 'add-product',
 
     data: function () {
       return {
-        product: {name: '', description: '', price: ''}
+        product: { name: '', description: '', price: '' }
       }
     },
 
     methods: {
       createProduct: function (prod) {
-        let product = prod
-        app.createProduct(product)
+        let prods = prod
+        app.createProduct(prods)
       }
 
     }

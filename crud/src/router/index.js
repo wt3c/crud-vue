@@ -7,7 +7,7 @@ import add_product from '@/components/add-product'
 import product_edit from '@/components/product-edit'
 import product_delete from '@/components/product-delete'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
@@ -35,6 +35,6 @@ export default new Router({
       path: '/product-delete',
       name: 'product-delete',
       component: product_delete
-    },
+    }
   ]
 })

@@ -7,14 +7,15 @@
 </template>
 
 <script>
-  export default {
-    name: "quadrinho",
-    props: {
-      imagem: {type: String},
-      titulo: {type: String, required: true},
-      descricao: {type: String}
-    }
+
+export default {
+  name: 'quadrinho',
+  props: {
+    imagem: {type: String},
+    titulo: {type: String, required: true},
+    descricao: {type: String}
   }
+}
 </script>
 
 <style scoped>

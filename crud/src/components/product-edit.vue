@@ -32,7 +32,6 @@
   export default {
     name: "product-edit",
 
-
     data: function () {
       return {
         product: app.findProduct(this.$route.params.product_id)

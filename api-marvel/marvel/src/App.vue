@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="md-layout">
     <img src="./assets/logo.png">
-    <div class="md-layout-item md-size-33" v-for="quadrinho in quadrinhos":key="quadrinho.id">
+    <div class="md-layout-item md-size-33" v-for="quadrinho in quadrinhos" :key="quadrinho.id">
       <quadrinho
         :titulo="quadrinho.title"
         :descricao="quadrinho.description"
@@ -11,8 +11,8 @@
 </template>
 
 <script>
-  import MarvelApi from '@/services/MarvelAPI';
-  import Quadrinho from '@/components/Quadrinho';
+  import MarvelApi from '@/services/MarvelAPI'
+  import Quadrinho from '@/components/Quadrinho'
 
   export default {
     name: 'App',
@@ -38,7 +38,6 @@
       }
     }
   }
-
 </script>
 
 
