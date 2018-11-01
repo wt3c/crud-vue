@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  // import CCrouter from './router/index'
+  import CCrouter from './router/index'
 
   var product_list = [
     { id: 1, name: 'Angular', description: 'Superheroic JavaScript MVW Framework.', price: 100 },
@@ -23,13 +23,15 @@
         products_data: product_list
       }
     },
-    
+
+    // Gostei dessa solução por que ficou fácil de entender e pequeno
     findProduct (productId) {
       return product_list[this.findProductKey(productId)]
     },
     findProductKey (productId) {
       for (var key = 0; key < product_list.length; key++) {
         if (product_list[key].id === productId) {
+          //retorna o index da lista
           return key
         }
       }
@@ -37,28 +39,31 @@
 
     deleteProduct (prod) {
       product_list.splice(prod, 1)
-      this.$router.push('/')
+      CCrouter.push('/')
     },
 
     updateProduct (product) {
+      // product_list[index]
       product_list[this.findProduct(product.id)] = {
         id: product.id,
         name: product.name,
         description: product.description,
         price: product.price
       }
-      this.$router.push('/')
+      CCrouter.push('/')
 
     },
 
     createProduct (product) {
       product_list.push({
+        // Math.random() retorna uma dizima Ex.: 0.52552552
+        // converte para string e delimita por . e pega o index 1
         id: Math.random().toString().split('.')[1],
         name: product.name,
         description: product.description,
         price: product.price
       })
-      this.$router.push('/')
+      CCrouter.push('/')
     },
 
   }
