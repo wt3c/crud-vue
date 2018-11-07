@@ -5,8 +5,15 @@
 </template>
 
 <script>
+// import { QInput, QOptionGroup } from 'quasar';
+
 export default {
   name: 'App',
+  /* components: {
+    QInput,
+    QOptionGroup,
+  },
+*/
 };
 </script>
 
