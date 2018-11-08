@@ -92,9 +92,9 @@ export default {
   data () {
     return {
       leftDrawer: true
-    }
+    };
   }
-}
+};
 </script>
 
 <style>

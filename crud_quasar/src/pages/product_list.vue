@@ -1,18 +1,16 @@
-/* eslint-disable vue/no-parsing-error */
 <template>
   <q-page class="flex flex-center">
-    <!--<div>-->
 
     <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+
     <router-link :to="{path: '/add-product'}">
-      <q-btn color="deep-orange" class="full-width" label="New product" icon-right="add">
-      </q-btn>
+      <q-btn color="deep-orange" class="full-width" label="New product" icon-right="add"></q-btn>
     </router-link>
 
     <q-input v-model="searchKey" float-label="Product name" id="search-element"/>
 
     <!--Detalhe dos produtos-->
-    <table class="md-table">
+    <table >
       <thead>
       <tr>
         <th>Name</th>
@@ -29,7 +27,7 @@
         <td>
           <a>
             <!--                Nome da rota    Parametros º_º  -->
-            <router-link :to="{name: 'product', params: {product_id: product.id}}">
+            <router-link :to="{name: 'product', params: {product_id: product.id}, path: '/product'}">
               {{ product.name }}
             </router-link>
           </a>
@@ -63,19 +61,19 @@
 export default {
   name: 'product_list',
   /* components: {
-    SimpleTable,
-  }, */
+              SimpleTable,
+            }, */
 
-  data() {
+  data () {
     return { searchKey: '' };
   },
 
   computed: {
-    filteredProducts() {
-      return this.$store.state.product.product_list.filter(product =>
+    filteredProducts () {
+      return this.$store.state.product.product_list.filter((product) =>
         product.name.indexOf(this.searchKey) > -1);
-    },
-  },
+    }
+  }
 
 };
 </script>

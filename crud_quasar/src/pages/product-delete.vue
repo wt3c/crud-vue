@@ -1,15 +1,13 @@
 <template>
-  <div id="q-app">
-    <router-view/>
-  </div>
+<h1>DELETE</h1>
 </template>
 
 <script>
-
 export default {
-  name: 'App'
+  name: 'product-delete'
 };
 </script>
 
-<style>
+<style scoped>
+
 </style>

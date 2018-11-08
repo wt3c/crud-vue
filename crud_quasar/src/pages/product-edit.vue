@@ -1,15 +1,13 @@
 <template>
-  <div id="q-app">
-    <router-view/>
-  </div>
+    <h1>EDIT</h1>
 </template>
 
 <script>
-
 export default {
-  name: 'App'
+  name: 'product-edit'
 };
 </script>
 
-<style>
+<style scoped>
+
 </style>

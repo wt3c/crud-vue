@@ -1,38 +1,53 @@
+// https://eslint.org/docs/user-guide/configuring
+
 module.exports = {
   root: true,
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
   },
   env: {
-    browser: true
+    browser: true,
   },
-  // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-  // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-  extends: ['plugin:vue/essential', 'airbnb-base'],
+  extends: [
+    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
+    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
+    'plugin:vue/essential',
+    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+    'standard'
+    // 'airbnb-base'
+    // 'google',
+  ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue',
   ],
-  globals: {
-    'ga': true, // Google Analytics
-    'cordova': true,
-    '__statics': true
-  },
   // add your custom rules here
-  'rules': {
-    'no-param-reassign': 0,
-
-    'import/first': 0,
-    'import/named': 2,
-    'import/namespace': 2,
-    'import/default': 2,
-    'import/export': 2,
-    'import/extensions': 0,
-    'import/no-unresolved': 0,
-    'import/no-extraneous-dependencies': 0,
-
+  rules: {
+    // allow async-await
+    'generator-star-spacing': 'off',
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-  }
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'indent': [
+      'error',
+      2,
+    ],
+    'linebreak-style': [
+      'error',
+      'unix',
+    ],
+    'quotes': [
+      'error',
+      'single',
+    ],
+    'semi': [
+      'error',
+      'always',
+    ],
+    'max-len': [
+      'error',
+      {'code': 120},
+    ],
+
+  },
 }
+

@@ -2,22 +2,20 @@
   <q-page class="flex flex-center">
     <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
 
+    <q-field
+      icon="people"
+      label="Your name"
+      helper="Helper"
+      :count="10"
+    >
+      <q-input v-model="product.name" float-label="Input float label"/>
+    </q-field>
 
-      <q-field
-        icon="people"
-        label="Your name"
-        helper="Helper"
-        :count="10"
-      >
-        <q-input v-model="product.name" float-label="Input float label"/>
-      </q-field>
-
-
-      <q-field
-        icon="flight_takeoff"
-        label="Flight"
-        helper="Pick the day when you want to go"
-      >
+    <q-field
+      icon="flight_takeoff"
+      label="Flight"
+      helper="Pick the day when you want to go"
+    >
       <q-option-group
         type="radio"
         v-model="option"
@@ -27,7 +25,7 @@
                 { label: 'Friday', value: 'friday' }
                  ]"
       />
-      </q-field>
+    </q-field>
 
   </q-page>
 </template>
@@ -42,14 +40,14 @@ export default {
   name: 'PageIndex',
   components: {
     QInput,
-    QOptionGroup,
+    QOptionGroup
   },
 
-  data() {
+  data () {
     return {
       product: { id: '', name: '' },
-      option: '',
+      option: ''
     };
-  },
+  }
 };
 </script>
