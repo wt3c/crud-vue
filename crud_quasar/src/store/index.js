@@ -4,7 +4,7 @@ import Vuex from 'vuex';
 import product from './product-store';
 
 /*
-Não gostei muito do mode de importação acima, prefiro a de baixo, mas vou segui o flux
+Não gostei muito do mode de importação acima, prefiro a de baixo, mas vou segui o fluxo
 import state from './state'
 import mutations from './mutations'
 */

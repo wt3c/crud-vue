@@ -1,32 +1,21 @@
-export const ADD_PRODUCT = (state, product) => {
-  console.log('##################', state);
+import { uid } from 'quasar';
+
+export function ADD_PRODUCT (state, product) {
+  let myuid = uid();
+
   state.product_list.push({
-    id: Math.random().toString().split('.')[1],
+    id: myuid,
     name: product.name,
     description: product.description,
     price: product.price
   });
+  console.log(state.product_list);
 };
 
-/*
-export default {
-
-  'CHANGE_PRODUCT' (state, payload) {
-    state.product_list[state.findProduct(payload.id)] = payload;
-  },
-
-  'DELETE_PRODUCT' (state, product) {
-    state.product_list.splice(product, 1);
-  },
-
-  'ADD_PRODUCT' (state, product) {
-    state.product_list.push({
-      id: Math.random().toString().split('.')[1],
-      name: product.name,
-      description: product.description,
-      price: product.price
-    });
-  }
-
+export function DELETE_PRODUCT (state, product) {
+  state.product_list.splice(product, 1);
 };
-*/
+
+export function CHANGE_PRODUCT (state, product) {
+  state.product_list[state.findProduct(product.id)] = product;
+}

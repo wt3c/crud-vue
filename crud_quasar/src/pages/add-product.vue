@@ -6,7 +6,7 @@
     <form v-on:submit="createProduct(product)">
 
       <div class="form-group">
-        <q-input float-label="Name" id="add-name" v-model="product.name" required/>
+        <q-input float-label="Name" id="add-name" v-model="product.name" required></q-input>
       </div>
 
       <div class="form-group">
@@ -15,7 +15,7 @@
       </div>
 
       <div class="form-group">
-        <q-input type="number" float-label="Price" id="add-price" v-model="product.price"/>
+        <q-input type="number" float-label="Price" id="add-price" v-model="product.price"></q-input>
       </div>
 
       <button type="submit" class="btn btn-primary">Create</button>
@@ -38,8 +38,9 @@ export default {
   methods: {
     createProduct (product) {
       let prod = product;
-      this.$store.commit('ADD_PRODUCT', prod);
-      this.$route.push('/');
+      this.$store.commit('product/ADD_PRODUCT', prod);
+      console.log(this.$router);
+      this.$router.push('/');
     }
   }
 
