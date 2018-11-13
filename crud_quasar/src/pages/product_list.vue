@@ -10,7 +10,7 @@
     <q-input v-model="searchKey" float-label="Product name" id="search-element"/>
 
     <!--Detalhe dos produtos-->
-    <table >
+    <table>
       <thead>
       <tr>
         <th>Name</th>
@@ -60,21 +60,23 @@
 
 export default {
   name: 'product_list',
-  /* components: {
-              SimpleTable,
-            }, */
 
   data () {
     return { searchKey: '' };
   },
 
+  created () {
+    this.$store.state.product.created();
+    // this.$store.state.product.UsingPouchDb();
+  },
+
   computed: {
     filteredProducts () {
-      return this.$store.state.product.product_list.filter((product) =>
-        product.name.indexOf(this.searchKey) > -1);
+      return this.$store.state.product.product_list.filter(
+        product => product.name.indexOf(this.searchKey) > -1
+      );
     }
   }
-
 };
 </script>
 

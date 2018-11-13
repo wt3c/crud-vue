@@ -2,18 +2,27 @@
 
 /* eslint-disable no-plusplus */
 
-// import PouchDB from pouchdb;
+// import PouchDB from './MyPouchDB';
+import { UsingPouchDB } from './MyPouchDB';
 
-function UsingPouchDb () {
-  var db = new PouchDB('productDB');
-  var remoteCouch = false;
+export default {
 
-  var products = [
-    {
+  created () {
+    console.log('----------------- CREATING DATABASE ----------------- ');
+    pounc = new UsingPouchDB();
+    pounc();
+  },
+
+  UsingPouchDb () {
+    var db = new PouchDB('productDB');
+    var remoteCouch = false;
+
+    var products = [{
       _id: '1',
       name: 'Angular',
       description: 'Superheroic JavaScript MVW Framework.',
-      price: 100
+      price: 100,
+      _rev: ''
     },
     {
       _id: '2',
@@ -27,45 +36,41 @@ function UsingPouchDb () {
       description: 'A JavaScript Library for building user interfaces.',
       price: 100
     }
-  ];
+    ];
 
-  products.forEach(function (prod) {
-    db.put(prod, function callback (err, result) {
-      if (!err) {
-        console.log('Banco criado com sucesso!');
-      } else {
-        console.log('Deu MERDA!!!!!!!!!!!!!!!!!!!!');
-        console.log(err);
-      }
-    }
-    );
-  });
-}
+    products.forEach(function (prod) {
+      db.put(prod)
+        .then(function (response) {
+          console.log('Banco criado com sucesso!', response);
+        })
+        .catch(function (err) {
+          console.log('Deu RUIM!!!!!!!!!!!', err);
+        });
+    });
+  },
 
-UsingPouchDb();
-export default {
+  product_list: [{
+    id: 1,
+    name: 'Angular',
+    description: 'Superheroic JavaScript MVW Framework.',
+    price: 100
+  },
+  {
+    id: 2,
+    name: 'Ember',
+    description: 'A framework for creating ambitious web applications.',
+    price: 100
+  },
+  {
+    id: 3,
+    name: 'React',
+    description: 'A JavaScript Library for building user interfaces.',
+    price: 100
+  }],
 
-  product_list: [
-    {
-      id: 1,
-      name: 'Angular',
-      description: 'Superheroic JavaScript MVW Framework.',
-      price: 100
-    },
-    {
-      id: 2,
-      name: 'Ember',
-      description: 'A framework for creating ambitious web applications.',
-      price: 100
-    },
-    {
-      id: 3,
-      name: 'React',
-      description: 'A JavaScript Library for building user interfaces.',
-      price: 100
-    }
-  ],
   findProduct (productId) {
+    UsingPouchDb();
+    console.log('###########', tes);
     return this.product_list[this.findProductKey(productId)];
   },
 
@@ -76,5 +81,4 @@ export default {
       }
     }
   }
-
 };
