@@ -66,17 +66,27 @@ export default {
   },
 
   created () {
-    this.$store.state.product.created();
-    // this.$store.state.product.UsingPouchDb();
+    // this.$store.state.product.created();
+    this.$store.state.product.UsingPouchDb();
   },
 
-  computed: {
+  // computed: {
+  //   started () {
+  //     return this.$store.state.product.UsingPouchDb();
+  //   }
+  // //   filteredProducts () {
+  // //     return this.$store.state.product.product_list2.filter(
+  // //       product => product.name.indexOf(this.searchKey) > -1);
+  // //   }
+  // },
+
+  methods: {
     filteredProducts () {
-      return this.$store.state.product.product_list.filter(
-        product => product.name.indexOf(this.searchKey) > -1
-      );
+      return this.$store.state.product.product_list2.filter(
+        product => product.name.indexOf(this.searchKey) > -1);
     }
   }
+
 };
 </script>
 

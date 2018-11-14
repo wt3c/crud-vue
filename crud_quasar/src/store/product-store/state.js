@@ -1,19 +1,35 @@
 /* eslint-disable consistent-return,no-undef,no-unused-vars */
-
 /* eslint-disable no-plusplus */
 
 // import PouchDB from './MyPouchDB';
-import { UsingPouchDB } from './MyPouchDB';
+// import { UsingPouchDB } from './MyPouchDB';
+var productList2 = [];
 
 export default {
 
-  created () {
-    console.log('----------------- CREATING DATABASE ----------------- ');
-    pounc = new UsingPouchDB();
-    pounc();
-  },
+  // product_list2: [],
+
+  // product_list: [{
+  //   id: 1,
+  //   name: 'Angular',
+  //   description: 'Superheroic JavaScript MVW Framework.',
+  //   price: 100
+  // },
+  // {
+  //   id: 2,
+  //   name: 'Ember',
+  //   description: 'A framework for creating ambitious web applications.',
+  //   price: 100
+  // },
+  // {
+  //   id: 3,
+  //   name: 'React',
+  //   description: 'A JavaScript Library for building user interfaces.',
+  //   price: 100
+  // }],
 
   UsingPouchDb () {
+    console.log('----------------- CREATING DATABASE ----------------- ');
     var db = new PouchDB('productDB');
     var remoteCouch = false;
 
@@ -39,7 +55,7 @@ export default {
     ];
 
     products.forEach(function (prod) {
-      db.put(prod)
+      db.post(prod)
         .then(function (response) {
           console.log('Banco criado com sucesso!', response);
         })
@@ -47,36 +63,29 @@ export default {
           console.log('Deu RUIM!!!!!!!!!!!', err);
         });
     });
-  },
 
-  product_list: [{
-    id: 1,
-    name: 'Angular',
-    description: 'Superheroic JavaScript MVW Framework.',
-    price: 100
+    db.allDocs({
+      include_docs: true,
+      attachments: true
+    })
+      .then(function (response) {
+        // console.log('############################', response.rows[1]['doc']);
+        productList2.push(response.rows[0]['doc']);
+        // this.product_list2.push(response.rows[1]['doc']);
+        console.log('############################', productList2);
+      })
+      .catch(function (err) {
+        console.log('&&&&&&&&&&&&&&&&&&&&&& * ERRROOOORRRRR *', err);
+      });
   },
-  {
-    id: 2,
-    name: 'Ember',
-    description: 'A framework for creating ambitious web applications.',
-    price: 100
-  },
-  {
-    id: 3,
-    name: 'React',
-    description: 'A JavaScript Library for building user interfaces.',
-    price: 100
-  }],
 
   findProduct (productId) {
-    UsingPouchDb();
-    console.log('###########', tes);
-    return this.product_list[this.findProductKey(productId)];
+    return productList2[this.findProductKey(productId)];
   },
 
   findProductKey (productId) {
-    for (let key = 0; key < this.product_list.length; key++) {
-      if (this.product_list[key].id === productId) {
+    for (let key = 0; key < productList2.length; key++) {
+      if (productList2[key].id === productId) {
         return key;
       }
     }
