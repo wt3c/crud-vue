@@ -7,26 +7,7 @@ var productList2 = [];
 
 export default {
 
-  // product_list2: [],
-
-  // product_list: [{
-  //   id: 1,
-  //   name: 'Angular',
-  //   description: 'Superheroic JavaScript MVW Framework.',
-  //   price: 100
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Ember',
-  //   description: 'A framework for creating ambitious web applications.',
-  //   price: 100
-  // },
-  // {
-  //   id: 3,
-  //   name: 'React',
-  //   description: 'A JavaScript Library for building user interfaces.',
-  //   price: 100
-  // }],
+  product_list2: productList2,
 
   UsingPouchDb () {
     console.log('----------------- CREATING DATABASE ----------------- ');
@@ -44,13 +25,15 @@ export default {
       _id: '2',
       name: 'Ember',
       description: 'A framework for creating ambitious web applications.',
-      price: 100
+      price: 100,
+      _rev: ''
     },
     {
       _id: '3',
       name: 'React',
       description: 'A JavaScript Library for building user interfaces.',
-      price: 100
+      price: 100,
+      _rev: ''
     }
     ];
 
@@ -60,7 +43,7 @@ export default {
           console.log('Banco criado com sucesso!', response);
         })
         .catch(function (err) {
-          console.log('Deu RUIM!!!!!!!!!!!', err);
+          console.warn('Ocorreu algum problema ao criar o banco de dados', err);
         });
     });
 
@@ -69,13 +52,12 @@ export default {
       attachments: true
     })
       .then(function (response) {
-        // console.log('############################', response.rows[1]['doc']);
-        productList2.push(response.rows[0]['doc']);
-        // this.product_list2.push(response.rows[1]['doc']);
-        console.log('############################', productList2);
+        for (let i = 0; i < products.length; i++) {
+          productList2.push(response.rows[i]['doc']);
+        }
       })
       .catch(function (err) {
-        console.log('&&&&&&&&&&&&&&&&&&&&&& * ERRROOOORRRRR *', err);
+        console.log('Erro em carregar a lista de produtos ## : *', err);
       });
   },
 

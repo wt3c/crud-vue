@@ -21,14 +21,15 @@
       </thead>
 
       <tbody>
-      <tr v-for="product in filteredProducts" :key="product.id">
+      <tr v-for="product in filteredProducts()" :key="product._id">
         <!--<tr v-for="product in products">-->
         <!--<tr v-for="product in products | filterBy searchKey in 'name'">-->
+
         <td>
           <a>
             <!--                Nome da rota    Parametros º_º  -->
-            <router-link :to="{name: 'product', params: {product_id: product.id}, path: '/product'}">
-              {{ product.name }}
+            <router-link :to="{name: 'product', params: {product_id: product._id}, path: '/product'}">
+              {{ product._id }}
             </router-link>
           </a>
         </td>
@@ -39,12 +40,12 @@
         </td>
         <td>
           <a class="btn btn-warning btn-xs">
-            <router-link :to="{name: 'product-edit', params: {product_id: product.id}}">
+            <router-link :to="{name: 'product-edit', params: {product_id: product._id}}">
               Editar
             </router-link>
           </a>
           <a class="btn btn-danger btn-xs">
-            <router-link :to="{name: 'product-delete', params: {product_id: product.id}}">Delete
+            <router-link :to="{name: 'product-delete', params: {product_id: product._id}}">Delete
             </router-link>
           </a>
         </td>
@@ -65,20 +66,11 @@ export default {
     return { searchKey: '' };
   },
 
-  created () {
-    // this.$store.state.product.created();
-    this.$store.state.product.UsingPouchDb();
+  computed: {
+    startDB () {
+      return this.$store.state.product.UsingPouchDb();
+    }
   },
-
-  // computed: {
-  //   started () {
-  //     return this.$store.state.product.UsingPouchDb();
-  //   }
-  // //   filteredProducts () {
-  // //     return this.$store.state.product.product_list2.filter(
-  // //       product => product.name.indexOf(this.searchKey) > -1);
-  // //   }
-  // },
 
   methods: {
     filteredProducts () {

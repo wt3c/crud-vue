@@ -42,7 +42,9 @@ export default {
         description: prod.description,
         price: prod.price
       };
-      this.$store.commit('produc/CHANGE_PRODUCT', payload);
+
+      // console.log(this.$store);
+      this.$store.commit('product/CHANGE_PRODUCT', payload);
       this.$router.push('/');
     }
   }
