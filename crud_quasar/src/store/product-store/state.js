@@ -67,7 +67,7 @@ export default {
 
   findProductKey (productId) {
     for (let key = 0; key < productList2.length; key++) {
-      if (productList2[key].id === productId) {
+      if (productList2[key]._id === productId) {
         return key;
       }
     }

@@ -21,6 +21,8 @@
         <router-link to="/">Cancel</router-link>
       </a>
 
+      {{product}}
+
     </form>
   </q-page>
 </template>
@@ -32,12 +34,13 @@ export default {
   data () {
     return { product: this.$store.state.product.findProduct(this.$route.params.product_id) };
   },
+
   methods: {
     updateProduct (product) {
       let prod = product;
 
       const payload = {
-        id: prod.id,
+        _id: prod._id,
         name: prod.name,
         description: prod.description,
         price: prod.price

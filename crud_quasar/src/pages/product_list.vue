@@ -28,8 +28,8 @@
         <td>
           <a>
             <!--                Nome da rota    Parametros º_º  -->
-            <router-link :to="{name: 'product', params: {product_id: product._id}, path: '/product'}">
-              {{ product._id }}
+            <router-link :to="{name: 'product', params: {product__id: product._id}, path: '/product'}">
+              {{ product.name }}
             </router-link>
           </a>
         </td>
@@ -41,7 +41,7 @@
         <td>
           <a class="btn btn-warning btn-xs">
             <router-link :to="{name: 'product-edit', params: {product_id: product._id}}">
-              Editar
+              Editar {{product._id}}
             </router-link>
           </a>
           <a class="btn btn-danger btn-xs">
@@ -57,7 +57,6 @@
 </template>
 
 <script>
-// import { SimpleTable } from '@/components';
 
 export default {
   name: 'product_list',
@@ -66,14 +65,19 @@ export default {
     return { searchKey: '' };
   },
 
-  computed: {
-    startDB () {
-      return this.$store.state.product.UsingPouchDb();
-    }
+  created () {
+    return this.$store.state.product.UsingPouchDb();
   },
+
+  // computed: {
+  //   startDB () {
+  //     return this.$store.state.product.UsingPouchDb();
+  //   }
+  // },
 
   methods: {
     filteredProducts () {
+      // this.$store.state.product.UsingPouchDb();
       return this.$store.state.product.product_list2.filter(
         product => product.name.indexOf(this.searchKey) > -1);
     }

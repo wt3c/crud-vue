@@ -3,6 +3,9 @@
 import { uid } from 'quasar';
 import PouchDB from 'pouchdb';
 
+var db = new PouchDB('productDB');
+var remoteCouch = false;
+
 export function ADD_PRODUCT (state, product) {
   let myuid = uid();
 
@@ -15,17 +18,18 @@ export function ADD_PRODUCT (state, product) {
   console.log(state.product_list);
 };
 
-export function DELETE_PRODUCT (state, product) {
-  state.product_list.splice(product, 1);
+export async function DELETE_PRODUCT (state, product) {
+  // state.product_list.splice(product, 1);
+  try {
+    var doc = await db.get(String(product._id));
+    var response = await db.remove(doc);
+  } catch (err) {
+    console.warn('...## Ocorreu um erro a tentar deletar o registro', product.name, ' ##...', err);
+  }
 };
 
 export function CHANGE_PRODUCT (state, product) {
-  // console.log(state);
-
   // state.product_list[state.findProduct(product.id)] = product;
-
-  var db = new PouchDB('productDB');
-  var remoteCouch = false;
 
   // console.log(db);
 
@@ -42,17 +46,20 @@ export function CHANGE_PRODUCT (state, product) {
 
   console.log(product);
 
-  db.get(String(product._id)).then(function (doc) {
-    return db.put({
-      _id: String(product._id),
-      name: product.name,
-      description: product.description,
-      price: product.price,
-      _rev: doc._rev
-    });
-  }).then(function (response) {
-    console.table(response);
-  })
+  db.get(String(product._id))
+    .then(function (doc) {
+      console.log('## DOC ##', doc);
+      return db.put({
+        _id: String(product._id),
+        name: product.name,
+        description: product.description,
+        price: product.price,
+        _rev: doc._rev
+      });
+    })
+    .then(function (response) {
+      console.table(response);
+    })
     .catch(function (err) {
       console.warn('### ERRO ###', err);
     });
