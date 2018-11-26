@@ -1,13 +1,18 @@
 <template>
   <div id="q-app">
-    <router-view/>
+    <!--<router-view/>-->
+    <product></product>
   </div>
 </template>
 
 <script>
+import Product from './features/Product';
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Product
+  }
 };
 </script>
 

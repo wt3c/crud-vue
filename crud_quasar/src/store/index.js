@@ -1,13 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import example from './module-example';
-import product from './product-store';
-
-/*
-Não gostei muito do mode de importação acima, prefiro a de baixo, mas vou segui o fluxo
-import state from './state'
-import mutations from './mutations'
-*/
+// import product from './product-store';
+import product from '../features/Product/store';
 
 Vue.use(Vuex);
 
