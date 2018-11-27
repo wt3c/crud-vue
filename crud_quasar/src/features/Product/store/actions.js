@@ -1,25 +1,7 @@
 /* eslint-disable consistent-return,no-undef,no-unused-vars */
 import PouchDB from 'pouchdb';
-// PouchDB.plugin(require('pouchdb-find'));
-
-// const setProduct = async ({ commit }, obj) => {
-//   const db = (await new PouchDB('productDB'));
-//   commit('SET_PRODUCT', { product });
-// };
 
 const db = new PouchDB('productDB');
-
-// const setProduct = async ({ commint }, obj) => {
-//   const list = (await
-//   db.allDocs({ include_docs: true })
-//     .then(function (docs) {
-//       console.log(docs.rows);
-//     })
-//     .catch(function (err) {
-//       console.log('Ocorreu algum erro', err);
-//     })
-//   );
-// };
 
 const products = [{
   _id: '1',
@@ -43,8 +25,18 @@ const products = [{
   _rev: ''
 }];
 
-const setProduct = [];
-// const setProduct = async ({ commint }, obj) => {
+const product = [];
+
+/**
+ * Se o Banco não existir, criar um novo
+ * com os dados pre definido no objeto products.
+ * Usei o metodo info da instacia do banco
+ * que gera um opção chamada doc_count que
+ * retorna a quandidade de docs no banco.
+ *
+ * Usei async mas para testar mesmo. Porém,
+ * ficou mais rapido a criação do Banco
+ * */
 
 var createDB = async () => {
   try {
@@ -57,55 +49,38 @@ var createDB = async () => {
             console.log('Banco criado com sucesso!', response);
           })
           .catch(function (err) {
-            console.warn('Ocorreu algum problema ao criar o banco de dados', err);
+            console.error('Ocorreu algum problema ao criar o banco de dados', err);
           });
       });
     } else {
-      console.log('---------- Banco existentem, não houve alterações ----------');
+      console.log('---------- Banco existente, não houve alterações ----------');
     }
   } catch (e) {
-    console.warn('**Ocorreu algum erro**', err);
+    console.error('**Ocorreu algum erro**', err);
   }
 };
 createDB();
 
-//
-// db.allDocs({
-//   include_docs: true,
-//   attachments: true
-// })
-//   .then(function (docs) {
-//     // console.log(docs.rows);
-//
-//     if (!docs.rows) {
-//       products.forEach(function (prod) {
-//         db.post(prod)
-//           .then(function (response) {
-//             console.log('Banco criado com sucesso!', response);
-//           })
-//           .catch(function (err) {
-//             console.warn('Ocorreu algum problema ao criar o banco de dados', err);
-//           });
-//       });
-//     } else {
-//
-//     }
-//   })
-//   .catch(function (err) {
-//     console.log('Ocorreu algum erro', err);
-//   });
+const cargalist = async function () {
+  try {
+    var docs = await db.allDocs({ include_docs: true, attachments: true });
 
-//   try {
-//     var doc = db.info();
-//     console.log(doc);
-//     commit('SET_LIST', { doc });
-//   } catch (err) {
-//     console.warn('...## Ocorreu um erro a tentar deletar o registro', ' ##...', err);
-//   }
-// };
+    await docs.rows.forEach(function (prod) {
+      product.push(prod.doc);
+    });
+  } catch (err) {
+    console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
+  }
+};
+cargalist();
 
-console.table(setProduct);
+const setProduct = async ({ commit }, obj) => {
+  commit('SET_PRODUCTS', { product });
+};
 
-export function f () {
+// console.log('** setProduct **', setProduct);
+
+export default function () {
+  console.log('@@@@@@@@@@@@@@@@');
   return setProduct;
 };
