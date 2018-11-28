@@ -2,6 +2,7 @@
   <div id="q-app">
     <!--<router-view/>-->
     <h3>Component Product</h3>
+    {{ product }}
   </div>
 </template>
 
@@ -11,16 +12,20 @@ import { mapState, mapActions } from 'vuex';
 export default {
   name: 'Product',
 
+  data () {
+    return { product: '' };
+  },
+
   mounted () {
-    console.log(this);
     // Lembrando que esse THIS é do scopo desse export default
     this.setProduct();
+    this.product = this.products;
   },
   methods: {
-    ...mapActions('product', ['setProduct'])
+    ...mapActions('modelproduct', ['setProduct'])
   },
   computed: {
-    ...mapState('product', ['products'])
+    ...mapState('modelproduct', ['products'])
 
   }
 };

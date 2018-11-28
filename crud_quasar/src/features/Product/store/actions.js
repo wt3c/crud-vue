@@ -1,4 +1,4 @@
-/* eslint-disable consistent-return,no-undef,no-unused-vars */
+/* eslint-disable consistent-return,no-undef,no-unused-vars,no-unused-expressions */
 import PouchDB from 'pouchdb';
 
 const db = new PouchDB('productDB');
@@ -25,7 +25,7 @@ const products = [{
   _rev: ''
 }];
 
-const product = [];
+var product = [];
 
 /**
  * Se o Banco não existir, criar um novo
@@ -63,24 +63,20 @@ createDB();
 
 const cargalist = async function () {
   try {
-    var docs = await db.allDocs({ include_docs: true, attachments: true });
-
-    await docs.rows.forEach(function (prod) {
-      product.push(prod.doc);
+    var docs = await db.allDocs({
+      include_docs: true,
+      attachments: true
     });
+
+    for (let i = 0; i < docs.rows.length; i++) {
+      await product.push(docs.rows[i]['doc']);
+    }
   } catch (err) {
     console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
   }
 };
 cargalist();
 
-const setProduct = async ({ commit }, obj) => {
+export function setProduct ({ commit }, obj) {
   commit('SET_PRODUCTS', { product });
-};
-
-// console.log('** setProduct **', setProduct);
-
-export default function () {
-  console.log('@@@@@@@@@@@@@@@@');
-  return setProduct;
 };

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 // import product from './product-store';
-import product from '../features/Product/store';
+import modelproduct from '../features/Product/store';
 
 Vue.use(Vuex);
 
@@ -14,7 +14,7 @@ Vue.use(Vuex);
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      product
+      modelproduct
     }
   });
 
