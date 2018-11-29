@@ -57,32 +57,38 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'product_list',
 
   data () {
-    return { searchKey: '' };
+    return { searchKey: '', product: '' };
   },
-
-  created () {
-    return this.$store.state.product.UsingPouchDb();
+  mounted () {
+    // Lembrando que esse THIS é do scopo desse export default
+    this.setProduct();
+    this.product = this.products;
+    // this.findProdct();
   },
-
-  // computed: {
-  //   startDB () {
-  //     return this.$store.state.product.UsingPouchDb();
-  //   }
-  // },
 
   methods: {
+    ...mapActions('modelproduct', ['setProduct']),
+    ...mapActions('modelproduct', ['findProdct']),
+
     filteredProducts () {
       // this.$store.state.product.UsingPouchDb();
-      return this.$store.state.product.product_list2.filter(
+      // return this.$store.state.this.product.filter(
+      return this.products.filter(
         product => product.name.indexOf(this.searchKey) > -1);
     }
-  }
+  },
 
+  computed: {
+    ...mapState('modelproduct', ['products'])
+    // ...mapGetters('modelproduct', ['findProdct(2)'])
+
+  }
 };
 </script>
 

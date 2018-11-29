@@ -79,4 +79,17 @@ cargalist();
 
 export function setProduct ({ commit }, obj) {
   commit('SET_PRODUCTS', { product });
+  return product;
 };
+
+export function findProdct (state, productID) {
+  return state.state.products[this.findProductKey[productID]];
+}
+
+export function findProductKey (state, productID) {
+  for (let key = 0; key < state.state.products.length; key++) {
+    if (state.state.products.length[key]._id === productID) {
+      return key;
+    }
+  }
+}

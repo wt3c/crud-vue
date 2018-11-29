@@ -20,12 +20,15 @@ export default {
     // Lembrando que esse THIS é do scopo desse export default
     this.setProduct();
     this.product = this.products;
+    this.findProdct();
   },
   methods: {
-    ...mapActions('modelproduct', ['setProduct'])
+    ...mapActions('modelproduct', ['setProduct']),
+    ...mapActions('modelproduct', ['findProdct'])
   },
   computed: {
     ...mapState('modelproduct', ['products'])
+    // ...mapGetters('modelproduct', ['findProdct(2)'])
 
   }
 };
