@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'add-product',
   data () {
@@ -36,9 +38,12 @@ export default {
     };
   },
   methods: {
+    ...mapActions('modelproduct', ['CreateProduct']),
+
     createProduct (product) {
       let prod = product;
-      this.$store.commit('product/ADD_PRODUCT', prod);
+
+      this.CreateProduct(prod);
       console.log(this.$router);
       this.$router.push('/');
     }

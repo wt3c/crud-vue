@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="4bc6ca51-a3d6-4dca-b565-e67d6217d2eb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_quasar/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_quasar/src/features/Product/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/features/Product/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud_quasar/src/pages/product.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/pages/product.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,38 +20,23 @@
     <favorites_list name="crud-vue" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56411874">
+    <splitter split-orientation="horizontal" split-proportion="0.6213904">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/crud_quasar/src/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="18">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/crud_quasar/src/App.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                <state relative-caret-position="342">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/index.js">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#22#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="565">
+                  <caret line="36" column="3" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="36" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -70,8 +56,72 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+                <state relative-caret-position="367">
+                  <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="468">
+                  <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#85#114#0" expanded="true" />
+                    <element signature="e#173#288#0" />
+                    <element signature="e#290#418#0" />
+                    <element signature="e#420#546#0" />
+                    <element signature="e#569#883#0" />
+                    <element signature="e#912#1487#0" />
+                    <element signature="n#!!block;n#findProductKey#0" />
+                    <element signature="n#!!block;n#ChangeProduct#0" />
+                    <element signature="n#!!block;n#f#0" />
+                    <element signature="n#!!block;n#f#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="569">
+                  <caret line="45" column="24" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/mutations.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="8" selection-start-line="8" selection-end-line="8" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -85,57 +135,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#173#288#0" />
-                    <element signature="e#290#418#0" />
-                    <element signature="e#420#546#0" />
-                    <element signature="e#569#883#0" />
-                    <element signature="e#912#1489#0" />
-                    <element signature="e#1540#1839#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="126">
-                  <caret line="7" column="5" selection-start-line="2" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/mutations.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/index.vue">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+                <state relative-caret-position="180">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
                 </state>
               </provider>
             </entry>
@@ -148,6 +156,38 @@
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#274#1553#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="443">
+                  <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="493">
+                  <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product-store/mutations.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="385">
+                  <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#64#93#0" expanded="true" />
+                    <element signature="n#!!block;n#DELETE_PRODUCT#0" />
                   </folding>
                 </state>
               </provider>
@@ -179,6 +219,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -203,16 +248,12 @@
         <option value="$PROJECT_DIR$/crud_quasar/src/layouts/MyLayout.vue" />
         <option value="$PROJECT_DIR$/crud_quasar/.eslintrc.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/router/routes.js" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product.vue" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue" />
         <option value="$PROJECT_DIR$/crud_quasar/src/pages/testDexie.html" />
         <option value="$PROJECT_DIR$/crud_quasar/src/index.template.html" />
         <option value="$PROJECT_DIR$/crud_quasar/src/store/product-store/MyPouchDB.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/tests/arrow_functions.js" />
         <option value="$PROJECT_DIR$/crud_quasar/quasar.conf.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/store/product-store/state.js" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue" />
         <option value="$PROJECT_DIR$/crud_quasar/src/store/product-store/mutations.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/store/product-store/action.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/store/product-store/actions.js" />
@@ -228,12 +269,16 @@
         <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/index.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/state.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/main.js" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/App.vue" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js" />
         <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/index.vue" />
         <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/mutations.js" />
-        <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product.vue" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue" />
         <option value="$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue" />
+        <option value="$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js" />
       </list>
     </option>
   </component>
@@ -257,7 +302,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,6 +370,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,22 +390,24 @@
     <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/crud_quasar/node_modules/eslint" />
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/crud_quasar/node_modules/eslint" />
     <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="database.data.views" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/crud_quasar/src/features/Product/store" />
       <recent name="$PROJECT_DIR$/crud_quasar/src/store/product" />
       <recent name="$PROJECT_DIR$/crud_quasar/src/store" />
       <recent name="$PROJECT_DIR$/crud_quasar/src/container/product" />
       <recent name="$PROJECT_DIR$/crud_quasar/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,16 +422,28 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/crud_quasar/package.json" />
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <branch name="master" repository="$PROJECT_DIR$" />
       <changelist id="4bc6ca51-a3d6-4dca-b565-e67d6217d2eb" name="Default Changelist" comment="" />
       <created>1538776600775</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1538776600775</updated>
+      <running>true</running>
+      <updated>1543942251598</updated>
       <workItem from="1542821619741" duration="9000" />
       <workItem from="1542821679002" duration="445000" />
       <workItem from="1542822146693" duration="40000" />
@@ -403,17 +462,49 @@
       <workItem from="1543516168340" duration="2892000" />
       <workItem from="1543519523865" duration="2047000" />
       <workItem from="1543522433507" duration="50000" />
+      <workItem from="1543868871458" duration="599000" />
+      <workItem from="1543939429432" duration="2447000" />
+      <workItem from="1543942251740" duration="5998000" />
+      <workItem from="1543949020531" duration="8826000" />
     </task>
-    <servers />
+    <task id="LOCAL-00001" summary="Edit_Quasar">
+      <branch name="master" repository="$PROJECT_DIR$" original="true" />
+      <branch name="Edit_Quasar" repository="$PROJECT_DIR$" />
+      <changelist id="4bc6ca51-a3d6-4dca-b565-e67d6217d2eb" name="Default Changelist" comment="" />
+      <created>1543942107526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543942249639</updated>
+      <workItem from="1543942144615" duration="80000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers>
+      <Trello>
+        <option name="currentBoard">
+          <TrelloBoard id="5ba3ea7d938cb02b5bc53bcb" name="CleanAir" />
+        </option>
+        <option name="currentList">
+          <TrelloList id="5ba3ea8de778d122977704fc" name="Levantando Material" />
+        </option>
+        <option name="currentUser">
+          <TrelloUser id="5044e63ed3484f8f0405fac9" name="welingtoncarlos" />
+        </option>
+        <password>df93dfcbdfcedf93df98dfcbdfc9df99dfc8df9bdf9bdf99dfcbdf9fdf9cdfc9dfcfdfcbdfc9df9adfcbdf99dfc9dfcbdf9cdfcedfcedf98df9fdf98dfccdfc9df9fdf92df9fdfcfdf9cdfccdf99df9edf93dfc8dfcfdf9bdf99df9bdfcfdf9edf92df9cdfcfdfc8df9adf9bdfcbdf99dfcedf9cdfc9df9ddf98df9fdfc9df9b</password>
+      </Trello>
+    </servers>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59835000" />
+    <option name="enabled" value="true" />
+    <option name="totallyTimeSpent" value="77785000" />
+    <option name="autoMode" value="false" />
+    <option name="showClosedTasks" value="false" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1600" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.45714286" visible="true" weight="0.15508021" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.45714286" weight="0.15828878" />
       <window_info id="Favorites" order="1" sideWeight="0.54285717" weight="0.15668449" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -437,6 +528,7 @@
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info anchor="right" x="0" y="0" width="430" height="853" id="Documentation" order="7" side_tool="true" weight="0.37807485" />
+      <window_info anchor="right" id="Time Tracking" order="8" weight="0.19786096" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="89" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product2/state.js" />
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product2/actions.js" />
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product2/getters.js" />
@@ -557,13 +635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -644,41 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product-store/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#64#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -699,43 +735,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/state.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#173#288#0" />
-            <element signature="e#290#418#0" />
-            <element signature="e#420#546#0" />
-            <element signature="e#569#883#0" />
-            <element signature="e#912#1489#0" />
-            <element signature="e#1540#1839#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/getters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="5" selection-start-line="2" selection-start-column="3" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -744,8 +747,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="36" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -760,10 +794,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product-delete.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/add-product.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/store/product-store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="48" column="29" lean-forward="true" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#64#93#0" expanded="true" />
+            <element signature="n#!!block;n#DELETE_PRODUCT#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud_quasar/src/features/Product/store/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="79" column="43" lean-forward="true" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#85#114#0" expanded="true" />
+            <element signature="e#173#288#0" />
+            <element signature="e#290#418#0" />
+            <element signature="e#420#546#0" />
+            <element signature="e#569#883#0" />
+            <element signature="e#912#1487#0" />
+            <element signature="n#!!block;n#findProductKey#0" />
+            <element signature="n#!!block;n#ChangeProduct#0" />
+            <element signature="n#!!block;n#f#0" />
+            <element signature="n#!!block;n#f#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crud_quasar/src/pages/product_list.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="80" column="43" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="43" />
+        <state relative-caret-position="367">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>

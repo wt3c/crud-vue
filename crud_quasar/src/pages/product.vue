@@ -14,12 +14,28 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex';
+
 export default {
   name: 'product',
 
   data () {
-    return { product: this.$store.state.product.findProduct(this.$route.params.product_id) };
+    return { product: '' };
+  },
+
+  computed: {
+    ...mapState('modelproduct', ['products'])
+  },
+
+  mounted () {
+    this.findProduct(this.$route.params.product_id);
+    this.product = this.products;
+  },
+  methods: {
+    ...mapActions('modelproduct', ['findProduct']),
+    ...mapActions('modelproduct', ['ChangeProduct'])
   }
+
 };
 </script>
 

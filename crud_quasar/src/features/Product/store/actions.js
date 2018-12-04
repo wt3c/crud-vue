@@ -1,4 +1,5 @@
 /* eslint-disable consistent-return,no-undef,no-unused-vars,no-unused-expressions */
+import { uid } from 'quasar';
 import PouchDB from 'pouchdb';
 
 const db = new PouchDB('productDB');
@@ -25,8 +26,6 @@ const products = [{
   _rev: ''
 }];
 
-var product = [];
-
 /**
  * Se o Banco não existir, criar um novo
  * com os dados pre definido no objeto products.
@@ -37,6 +36,8 @@ var product = [];
  * Usei async mas para testar mesmo. Porém,
  * ficou mais rapido a criação do Banco
  * */
+
+var product = [];
 
 var createDB = async () => {
   try {
@@ -56,13 +57,17 @@ var createDB = async () => {
       console.log('---------- Banco existente, não houve alterações ----------');
     }
   } catch (e) {
-    console.error('**Ocorreu algum erro**', err);
+    console.error('**Ocorreu algum erro**', e);
   }
 };
 createDB();
 
-const cargalist = async function () {
+// const cargalist = async function () {
+export async function cargalist () {
   try {
+    product = [];
+    console.log('CARGALIST ####################');
+
     var docs = await db.allDocs({
       include_docs: true,
       attachments: true
@@ -71,25 +76,75 @@ const cargalist = async function () {
     for (let i = 0; i < docs.rows.length; i++) {
       await product.push(docs.rows[i]['doc']);
     }
+
+    // commit('SET_PRODUCTS', { product });
   } catch (err) {
     console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
   }
 };
 cargalist();
 
-export function setProduct ({ commit }, obj) {
+export async function setProduct ({ commit }, obj) {
+  // cargalist();
   commit('SET_PRODUCTS', { product });
   return product;
 };
 
-export function findProdct (state, productID) {
-  return state.state.products[this.findProductKey[productID]];
+export function findProduct (state, productID) {
+  let product = state.state.products[findProductKey(state, productID)];
+  state.commit('SET_PRODUCTS', { product });
 }
 
-export function findProductKey (state, productID) {
+function findProductKey (state, productID) {
   for (let key = 0; key < state.state.products.length; key++) {
-    if (state.state.products.length[key]._id === productID) {
+    if (state.state.products[key]._id === productID) {
       return key;
     }
+  }
+}
+
+export function ChangeProduct (state, product) {
+  db.get(String(product._id))
+    .then(function (doc) {
+      console.log('## DOC ##', doc);
+      return db.put({
+        _id: String(product._id),
+        name: product.name,
+        description: product.description,
+        price: product.price,
+        _rev: doc._rev
+      });
+    })
+    .then(function (response) {
+      console.table(response);
+    })
+    .catch(function (err) {
+      console.warn('### ERRO ###', err);
+    });
+}
+
+export async function DeleteProduct (state, product) {
+  try {
+    var doc = await db.get(String(product._id));
+    var response = await db.remove(doc);
+  } catch (err) {
+    console.warn('...## Ocorreu um erro a tentar deletar o registro', product.name, ' ##...', err);
+  }
+}
+
+export async function CreateProduct (state, product) {
+  let myuid = uid();
+
+  try {
+    let response = await db.put({
+      _id: myuid,
+      name: product.name,
+      description: product.description,
+      price: product.price
+    });
+
+    console.log(response);
+  } catch (err) {
+    console.error('OCORREU UM ERRO A GRAVAR O NOVO PRODUTO', err);
   }
 }

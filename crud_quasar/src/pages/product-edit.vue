@@ -4,38 +4,49 @@
     <form v-on:submit="updateProduct(product)">
 
       <div class="form-group">
-        <q-input float-label="Name" id="add-name" v-model="product.name" required></q-input>
+        <q-input float-label="Name" id="add-name" required v-model="product.name"></q-input>
       </div>
 
       <div class="form-group">
-        <q-input type="textarea" float-label="Description" class="form-control" id="add-description"
-                 rows="10" v-model="product.description"></q-input>
+        <q-input class="form-control" float-label="Description" id="add-description" rows="10"
+                 type="textarea" v-model="product.description"></q-input>
       </div>
 
       <div class="form-group">
-        <q-input type="number" float-label="Price" id="add-price" v-model="product.price"></q-input>
+        <q-input float-label="Price" id="add-price" type="number" v-model="product.price"></q-input>
       </div>
 
-      <button type="submit" class="btn btn-primary">Update</button>
+      <button class="btn btn-primary" type="submit">Update</button>
       <a class="btn btn-default">
         <router-link to="/">Cancel</router-link>
       </a>
-
-      {{product}}
-
     </form>
   </q-page>
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex';
+
 export default {
   name: 'product-edit',
 
   data () {
-    return { product: this.$store.state.product.findProduct(this.$route.params.product_id) };
+    return { product: '' };
+  },
+
+  mounted () {
+    this.findProduct(this.$route.params.product_id);
+    this.product = this.products;
+  },
+
+  computed: {
+    ...mapState('modelproduct', ['products'])
   },
 
   methods: {
+    ...mapActions('modelproduct', ['findProduct']),
+    ...mapActions('modelproduct', ['ChangeProduct']),
+
     updateProduct (product) {
       let prod = product;
 
@@ -46,12 +57,12 @@ export default {
         price: prod.price
       };
 
-      // console.log(this.$store);
-      this.$store.commit('product/CHANGE_PRODUCT', payload);
+      this.ChangeProduct(payload);
       this.$router.push('/');
     }
   }
 };
+
 </script>
 
 <style scoped>

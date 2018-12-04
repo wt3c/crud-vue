@@ -22,13 +22,13 @@
 
       <tbody>
       <tr v-for="product in filteredProducts()" :key="product._id">
-        <!--<tr v-for="product in products">-->
-        <!--<tr v-for="product in products | filterBy searchKey in 'name'">-->
+        <!--<tr v-for="product in products" :key="product._id">-->
+        <!--<tr v-for="product in products | filterBy searchKey in 'name'" :key="product._id">-->
 
         <td>
           <a>
             <!--                Nome da rota    Parametros º_º  -->
-            <router-link :to="{name: 'product', params: {product__id: product._id}, path: '/product'}">
+            <router-link :to="{name: 'product', params: {product_id: product._id}, path: '/product'}">
               {{ product.name }}
             </router-link>
           </a>
@@ -41,7 +41,7 @@
         <td>
           <a class="btn btn-warning btn-xs">
             <router-link :to="{name: 'product-edit', params: {product_id: product._id}}">
-              Editar {{product._id}}
+              Editar
             </router-link>
           </a>
           <a class="btn btn-danger btn-xs">
@@ -67,27 +67,28 @@ export default {
   },
   mounted () {
     // Lembrando que esse THIS é do scopo desse export default
+    // console.log(this.$store.state);
+    // this.cargalist();
     this.setProduct();
     this.product = this.products;
-    // this.findProdct();
   },
 
   methods: {
     ...mapActions('modelproduct', ['setProduct']),
-    ...mapActions('modelproduct', ['findProdct']),
+    // ...mapActions('modelproduct', ['cargalist']),
 
     filteredProducts () {
-      // this.$store.state.product.UsingPouchDb();
-      // return this.$store.state.this.product.filter(
-      return this.products.filter(
-        product => product.name.indexOf(this.searchKey) > -1);
+      try {
+        return this.products.filter(
+          product => product.name.indexOf(this.searchKey) > -1);
+      } catch (e) {
+        console.error('**Ocorreu algum erro**', e);
+      }
     }
   },
 
   computed: {
     ...mapState('modelproduct', ['products'])
-    // ...mapGetters('modelproduct', ['findProdct(2)'])
-
   }
 };
 </script>
