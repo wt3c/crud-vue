@@ -4,6 +4,7 @@ import PouchDB from 'pouchdb';
 
 const db = new PouchDB('productDB');
 
+var product = [];
 const products = [{
   _id: '1',
   name: 'Angular',
@@ -37,7 +38,7 @@ const products = [{
  * ficou mais rapido a criação do Banco
  * */
 
-var product = [];
+// let product = [];
 
 var createDB = async () => {
   try {
@@ -64,10 +65,9 @@ createDB();
 
 // const cargalist = async function () {
 export async function cargalist () {
-  try {
-    product = [];
-    console.log('CARGALIST ####################');
+  product = [];
 
+  try {
     var docs = await db.allDocs({
       include_docs: true,
       attachments: true
@@ -76,18 +76,18 @@ export async function cargalist () {
     for (let i = 0; i < docs.rows.length; i++) {
       await product.push(docs.rows[i]['doc']);
     }
-
-    // commit('SET_PRODUCTS', { product });
   } catch (err) {
     console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
   }
-};
-cargalist();
 
-export async function setProduct ({ commit }, obj) {
-  // cargalist();
+  console.log('CARGALIST ####################', product);
+};
+// cargalist();
+
+export function setProduct ({ commit }, obj) {
+  cargalist();
   commit('SET_PRODUCTS', { product });
-  return product;
+  // return product;
 };
 
 export function findProduct (state, productID) {
@@ -126,7 +126,9 @@ export function ChangeProduct (state, product) {
 export async function DeleteProduct (state, product) {
   try {
     var doc = await db.get(String(product._id));
-    var response = await db.remove(doc);
+    var response = db.remove(doc);
+
+    // createDB();
   } catch (err) {
     console.warn('...## Ocorreu um erro a tentar deletar o registro', product.name, ' ##...', err);
   }
@@ -142,8 +144,6 @@ export async function CreateProduct (state, product) {
       description: product.description,
       price: product.price
     });
-
-    console.log(response);
   } catch (err) {
     console.error('OCORREU UM ERRO A GRAVAR O NOVO PRODUTO', err);
   }

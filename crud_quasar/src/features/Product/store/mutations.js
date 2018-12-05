@@ -2,4 +2,5 @@
 
 export function SET_PRODUCTS (state, obj) {
   state.products = obj.product;
+  console.log(state.products);
 };

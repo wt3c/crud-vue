@@ -44,7 +44,6 @@ export default {
       let prod = product;
 
       this.CreateProduct(prod);
-      console.log(this.$router);
       this.$router.push('/');
     }
   }

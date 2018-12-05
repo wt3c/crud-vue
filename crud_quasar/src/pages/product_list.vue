@@ -21,8 +21,8 @@
       </thead>
 
       <tbody>
-      <tr v-for="product in filteredProducts()" :key="product._id">
-        <!--<tr v-for="product in products" :key="product._id">-->
+      <!--<tr v-for="product in filteredProducts()" :key="product._id">-->
+        <tr v-for="product in products" :key="product._id">
         <!--<tr v-for="product in products | filterBy searchKey in 'name'" :key="product._id">-->
 
         <td>
@@ -63,19 +63,19 @@ export default {
   name: 'product_list',
 
   data () {
-    return { searchKey: '', product: '' };
+    return { searchKey: '', product: [''] };
   },
   mounted () {
+    this.product = [];
     // Lembrando que esse THIS é do scopo desse export default
+
     // console.log(this.$store.state);
-    // this.cargalist();
     this.setProduct();
     this.product = this.products;
   },
-
   methods: {
     ...mapActions('modelproduct', ['setProduct']),
-    // ...mapActions('modelproduct', ['cargalist']),
+    ...mapActions('modelproduct', ['cargalist']),
 
     filteredProducts () {
       try {

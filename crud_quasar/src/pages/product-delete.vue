@@ -32,10 +32,13 @@ export default {
   methods: {
     ...mapActions('modelproduct', ['findProduct']),
     ...mapActions('modelproduct', ['DeleteProduct']),
+    ...mapActions('modelproduct', ['cargalist']),
 
     deleteprod (product) {
       let prod = product;
       this.DeleteProduct(prod);
+      // this.setProduct();
+      // this.cargalist();
       this.$router.push('/');
     }
   }
