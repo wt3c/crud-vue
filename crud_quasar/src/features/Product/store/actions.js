@@ -1,4 +1,5 @@
-/* eslint-disable consistent-return,no-undef,no-unused-vars,no-unused-expressions */
+/* eslint-disable consistent-return,no-undef,no-unused-vars,no-unused-expressions,no-redeclare,
+no-implied-eval */
 import { uid } from 'quasar';
 import PouchDB from 'pouchdb';
 
@@ -34,61 +35,66 @@ const products = [{
  * que gera um opção chamada doc_count que
  * retorna a quandidade de docs no banco.
  *
- * Usei async mas para testar mesmo. Porém,
- * ficou mais rapido a criação do Banco
  * */
+export function createDB () {
+  console.log('############ createDB ##############');
 
-// let product = [];
-
-var createDB = async () => {
   try {
-    var result = await db.info();
-
-    if (result.doc_count === 0) {
-      await products.forEach(function (prod) {
-        db.post(prod)
-          .then(function (response) {
-            console.log('Banco criado com sucesso!', response);
-          })
-          .catch(function (err) {
-            console.error('Ocorreu algum problema ao criar o banco de dados', err);
+    db.info()
+      .then(function (result) {
+        if (result.doc_count === 0) {
+          products.forEach(function (prod) {
+            db.post(prod)
+              .then(function (response) {
+                console.log('Banco criado com sucesso!', response);
+              })
+              .catch(function (err) {
+                console.error('Ocorreu algum problema ao criar o banco de dados', err);
+              });
           });
+        } else {
+          console.log('---------- Banco existente, não houve alterações ----------');
+        }
       });
-    } else {
-      console.log('---------- Banco existente, não houve alterações ----------');
-    }
   } catch (e) {
     console.error('**Ocorreu algum erro**', e);
   }
 };
-createDB();
 
-// const cargalist = async function () {
-export async function cargalist () {
+export function cargalist () {
+  console.log('############ cargalist ##############');
   product = [];
 
   try {
-    var docs = await db.allDocs({
+    db.allDocs({
       include_docs: true,
       attachments: true
+    }).then(function (result) {
+      for (let i = 0; i < result.rows.length; i++) {
+        product.push(result.rows[i]['doc']);
+      }
     });
-
-    for (let i = 0; i < docs.rows.length; i++) {
-      await product.push(docs.rows[i]['doc']);
-    }
   } catch (err) {
     console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
   }
-
-  console.log('CARGALIST ####################', product);
 };
-// cargalist();
-
+/**
+ * Essa função é chamada toda vez que a pagina inicial é solicitada.
+ * Estava usando funções async para gerenciar inicialmente o banco
+ * e a lista que alimenta o state, mas com o meu conhecimento limitado,
+ * não estava tando certo, parti para o promise MeRmU.
+ * O processo banco > lista... tem que ter uma ordem restrida de execução
+ * e a unica maneira foi usando o setTime, que provavelmente vai me dá dor
+ * cabeça em algum momento.
+**/
 export function setProduct ({ commit }, obj) {
-  cargalist();
-  commit('SET_PRODUCTS', { product });
-  // return product;
-};
+  createDB();
+  window.setTimeout(cargalist, 500);
+  window.setTimeout(() => {
+    console.log('############ SetProduct ##############');
+    commit('SET_PRODUCTS', { product });
+  }, 1000);
+}
 
 export function findProduct (state, productID) {
   let product = state.state.products[findProductKey(state, productID)];
@@ -127,8 +133,6 @@ export async function DeleteProduct (state, product) {
   try {
     var doc = await db.get(String(product._id));
     var response = db.remove(doc);
-
-    // createDB();
   } catch (err) {
     console.warn('...## Ocorreu um erro a tentar deletar o registro', product.name, ' ##...', err);
   }

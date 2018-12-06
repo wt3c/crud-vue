@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import product from './product-store';
 import modelproduct from '../features/Product/store';
 
 Vue.use(Vuex);

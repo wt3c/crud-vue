@@ -68,14 +68,19 @@ export default {
   mounted () {
     this.product = [];
     // Lembrando que esse THIS é do scopo desse export default
+    // this.createDB();
+    console.log('############ STORE ###############');
+    console.log(this.$store);
+    console.log('############ FIM STORE ###############');
+    console.log('');
 
-    // console.log(this.$store.state);
     this.setProduct();
     this.product = this.products;
   },
   methods: {
+    // ...mapActions('modelproduct', ['createDB']),
     ...mapActions('modelproduct', ['setProduct']),
-    ...mapActions('modelproduct', ['cargalist']),
+    // ...mapActions('modelproduct', ['cargalist']),
 
     filteredProducts () {
       try {
