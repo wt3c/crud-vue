@@ -6,6 +6,7 @@ module.exports = function (ctx) {
     plugins: [
       'i18n',
       'axios'
+      // 'loading'
     ],
     css: [
       'app.styl'
@@ -64,7 +65,9 @@ module.exports = function (ctx) {
         'QTable',
         'QTh',
         'QTr',
-        'QTd'
+        'QTd',
+        'QInnerLoading',
+        'QSpinnerGears'
       ],
       directives: [
         'Ripple'

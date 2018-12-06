@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "loading": "^1.13.3",
     "localforage": "^1.7.3",
     "pouchdb": "^7.0.0",
     "vue": "^2.5.17",

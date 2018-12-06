@@ -1,6 +1,6 @@
 /* eslint-disable consistent-return,no-undef,no-unused-vars,no-unused-expressions,no-redeclare,
 no-implied-eval */
-import { uid } from 'quasar';
+import { Loading, uid } from 'quasar';
 import PouchDB from 'pouchdb';
 
 const db = new PouchDB('productDB');
@@ -69,15 +69,17 @@ export function cargalist () {
     db.allDocs({
       include_docs: true,
       attachments: true
-    }).then(function (result) {
-      for (let i = 0; i < result.rows.length; i++) {
-        product.push(result.rows[i]['doc']);
-      }
-    });
+    })
+      .then(function (result) {
+        for (let i = 0; i < result.rows.length; i++) {
+          product.push(result.rows[i]['doc']);
+        }
+      });
   } catch (err) {
     console.error('## Ocorreu um erro ao tentar ler o banco ##', err);
   }
 };
+
 /**
  * Essa função é chamada toda vez que a pagina inicial é solicitada.
  * Estava usando funções async para gerenciar inicialmente o banco
@@ -86,8 +88,17 @@ export function cargalist () {
  * O processo banco > lista... tem que ter uma ordem restrida de execução
  * e a unica maneira foi usando o setTime, que provavelmente vai me dá dor
  * cabeça em algum momento.
-**/
+ **/
 export function setProduct ({ commit }, obj) {
+  Loading.show({
+    // spinner: QSpinnerGears,
+    message: 'Some message',
+    messageColor: 'blue',
+    spinnerSize: 250, // in pixels
+    spinnerColor: 'white',
+    customClass: 'bg-primary'
+  });
+
   createDB();
   window.setTimeout(cargalist, 500);
   window.setTimeout(() => {
