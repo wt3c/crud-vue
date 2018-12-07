@@ -1,5 +1,7 @@
 <template>
-  <q-page>
+  <q-page class="card-examples row items-start" padding>
+    <q-card class=center>
+
     <h2>Edit product {{product.name}} </h2>
     <form v-on:submit="updateProduct(product)">
 
@@ -21,6 +23,8 @@
         <router-link to="/">Cancel</router-link>
       </a>
     </form>
+    </q-card>
+
   </q-page>
 </template>
 

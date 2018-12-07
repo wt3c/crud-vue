@@ -6,14 +6,14 @@ module.exports = function (ctx) {
     plugins: [
       'i18n',
       'axios'
-      // 'loading'
+      // 'LoadingBar'
     ],
     css: [
       'app.styl'
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons', // optional, you are not bound to it
+      'material-icons' // optional, you are not bound to it
       // 'ionicons',
       // 'mdi',
       // 'fontawesome'
@@ -66,8 +66,19 @@ module.exports = function (ctx) {
         'QTh',
         'QTr',
         'QTd',
+        'QAjaxBar',
+        'QSpinner',
         'QInnerLoading',
-        'QSpinnerGears'
+        'QSpinnerGears',
+        'QSpinnerAudio',
+        'QSpinnerBall',
+        'QSpinnerHourglass',
+        'QCard',
+        'QCardTitle',
+        'QCardMain',
+        'QCardMedia',
+        'QCardSeparator',
+        'QCardActions'
       ],
       directives: [
         'Ripple'
